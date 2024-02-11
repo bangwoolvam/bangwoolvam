@@ -14,7 +14,17 @@ datasource db {
 }
 
 model Todo {
-  no       Int    @id @default(autoincrement())
-  flag     Boolean @default(false)
-  content  String
+  todoNo          Int    @id @default(autoincrement())
+  groupNo        Int
+  flag                Boolean @default(false)
+  content         String
+  sort               Int
+  createDate    DateTime
+  registerDate DateTime
+}
+
+model TodoGroup  {
+  groupNo       Int    @id @default(autoincrement())
+  title               String
+  sort               Int
 }
