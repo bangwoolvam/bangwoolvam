@@ -7,7 +7,7 @@ export async function GET(
   const todo: Todo =
     (await prisma.todo.findUnique({
       where: {
-        no: Number(params.id),
+        todoNo: Number(params.id),
       },
     })) ?? ({} as Todo)
   return new Response(JSON.stringify(todo))
