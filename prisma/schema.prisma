@@ -9,22 +9,28 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id    String  @id @default(auto()) @map("_id") @db.ObjectId
+  email String  @unique
+  name  String?
+}
+
 model Todo {
-  todoNo          Int    @id @default(autoincrement())
-  groupNo        Int
-  flag                Boolean @default(false)
-  content         String
-  sort               Int
-  createDate    DateTime
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  groupNo      Int
+  flag         Boolean  @default(false)
+  content      String
+  sort         Int
+  createDate   DateTime
   registerDate DateTime
 }
 
-model TodoGroup  {
-  groupNo       Int    @id @default(autoincrement())
-  title               String
-  sort               Int
+model TodoGroup {
+  groupNo String @id @default(auto()) @map("_id") @db.ObjectId
+  title   String
+  sort    Int
 }

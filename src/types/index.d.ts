@@ -2,7 +2,7 @@
  *  Todo 항목
  */
 type Todo = {
-  todoNo: number
+  id: string
   groupNo: number
   flag: boolean
   content: string
@@ -17,7 +17,6 @@ type Todo = {
 type TodoGroup = {
   groupNo: number
   title: string
-  Todo: [Todo?]
   sort: number
 }
 
