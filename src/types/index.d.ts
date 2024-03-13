@@ -36,3 +36,11 @@ type MemberGroup = {
   name: string
   role: string
 }
+
+/**
+ * Jaeyoung Add Data Interface
+ */
+type IAddData = {
+  flag: HTMLSelectElement | null
+  content: HTMLInputElement | null
+}

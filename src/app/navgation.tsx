@@ -28,6 +28,10 @@ export default function Navigation() {
       label: 'Path2',
       path: '/path2',
     },
+    {
+      label: '재영Sample',
+      path: '/sample-jy',
+    },
   ]
 
   const defaultListClass = 'inline-block p-4 border-b-2 rounded-t-lg'
