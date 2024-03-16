@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 1px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(2, 45%);
+}
+
+.textContainer {
+    width: 100px;
+    margin: 3px;
+    border: 1px solid;
+}
+
+.addButton {
+    color: aquamarine;
+    margin-top: 10px;
+    width: 50px;
+    border-radius: 20%;
+    background-color: blue;
+}
+
+.cancelButton {
+    margin-left: 10px;
+    width: 50px;
+    border-radius: 20%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(241, 161, 161);
+}
+
+.createButton {
+    margin-left: 10px;
+    width: 50px;
+    border-radius: 20%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(96, 230, 56);
+}
+
+.deleteButton {
+    margin-left: 10px;
+    width: 50px;
+    border-radius: 20%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 248, 42);
+}
